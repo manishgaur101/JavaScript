@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <title>JavaScript Animation</title>
+      <script>
+         <!--
+            var imgObj = null;
+         
+            function init() {
+               imgObj = document.getElementById('myImage');
+               imgObj.style.position= 'relative';
+               imgObj.style.left = '0px';
+            }
+
+            function moveRight() {
+               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+            }
+			
+			function moveLeft() {
+               imgObj.style.left = parseInt(imgObj.style.left) + -10 + 'px';
+            }
+			
+            window.onload =init;
+         //-->
+      </script>
+   </head>
+
+   <body>
+      <form>
+         <img id="myImage" src="images/img1.jpg" height="50px" width="90px" />
+        <!-- <p>Click button below to move the image to right</p>-->
+		<p></p>
+         <input type="button" value="Move Image to left" onclick="moveLeft();" />
+		 <input type="button" value="Move Image to right" onclick="moveRight();" />
+		 
+      </form>
+   </body>
+</html>
