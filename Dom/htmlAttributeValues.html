@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Dom</title>
+<script>
+// -- Below are two ways to call a function after window loads complete
+//1. This is method 1
+//window.onload = function handleHTML(){
+ //document.getElementById("para1").align = "center";
+ //document.getElementById("img1").src = "js.png";
+//}
+
+ //2. This is method 2
+function handleHTML(){
+ document.getElementById("para1").align = "right";
+ document.getElementById("img1").src = "js.png";
+}
+
+window.onload = handleHTML;
+
+//Q - how to run multiple function on body load and how to set their priority order
+</script>
+</head>
+<!-- To call any method on a load of body then define like below
+<body onload="handleHTML()">
+we can also do the same by window.onload method shown above.
+
+-->
+<body>
+<p id="para1">Manish</p>
+<image id="img1" src="download.jfif"/>
+</body>
+</html>
